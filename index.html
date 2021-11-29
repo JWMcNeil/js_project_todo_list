@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos & Nox | TODO</title>
+    <meta name="My first JavaScript project!" content="Challenging myself to build a todo list"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+
+    <header class="card">
+        <h1>TODO</h1>
+        <button id="theme-switcher">
+            <img src="assets/light_mode_white_24dp.svg" alt="Change color theme"/>
+        </button>
+    </header>
+    
+    <main>
+        <div class="card add">
+            <div class="cb-container">
+                <button id="add-btn">+</button>
+            </div>
+            <div class="txt-container">
+                <input
+                    type="text"
+                    class="txt-input"
+                    placeholder="Create a new todo..."
+                    spellcheck="false"
+                    autocomplete="off"
+                />
+            </div>
+        </div>
+        <ul class="todos"></ul>
+        <div class="card stat">
+            <p class="corner"><span id="items-left">0</span> items left</p>
+            <div class="filter">
+                <button id="all" class="on">ALL</button>
+                <button id="active">Active</button>
+                <button id="completed">Completed</button>
+            </div>
+            <div class="corner">
+                <button id="clear-completed">Clear Completed</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Drag and drop to reorder list</p>
+    </footer>
+   <script src="/script.js"></script>
+</body>
+</html>
